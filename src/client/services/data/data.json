@@ -1,0 +1,31 @@
+{
+    "siteTitle": "Angular 2 + ExpressJS + Phantom",
+    "siteDescription": "An example boilerplate with Angular 2, ExpressJS and PhantomJS setup for maximum SEO experience!",
+    "pages": [
+        {
+            "url": "",
+            "title": "Frontpage",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis dolor risus. Cras at felis ut dui fermentum suscipit. Nam ut commodo ipsum. Aliquam laoreet ante eu pulvinar venenatis. Nam sit amet maximus est, at blandit lacus. Aliquam elit nunc, venenatis eu turpis nec, mattis pretium sapien. Nulla id vestibulum sem. In molestie dui risus, fermentum egestas ex dignissim nec. Morbi tempor semper est, vitae efficitur turpis aliquet tristique. Cras in mollis augue."
+        },
+        {
+            "url": "something",
+            "title": "Something",
+            "description": "Duis quis tellus nibh. Nulla sit amet diam efficitur, auctor enim non, sodales urna. Duis at ipsum lacinia, placerat nunc eu, vehicula justo. Nunc at lacus finibus, pharetra sem non, placerat felis. Etiam rutrum vel tortor ac scelerisque. Suspendisse faucibus tempus blandit. Cras lobortis eros non urna mollis, at luctus arcu molestie. Nam euismod, nisi eu vulputate mattis, ligula ex varius tellus, ac eleifend ligula urna in lorem. Sed nibh erat, pretium at justo eu, commodo gravida nunc. Sed porttitor iaculis odio, in rhoncus eros aliquet sit amet. Ut tortor ipsum, dapibus non tortor ac, porta posuere tellus."
+        },
+        {
+            "url": "wonderful",
+            "title": "Wonderful",
+            "description": "Fusce finibus nisi in convallis sollicitudin. Morbi feugiat convallis mi vitae viverra. Sed molestie vestibulum rhoncus. Nullam porttitor, odio bibendum interdum ullamcorper, turpis velit condimentum ipsum, ac maximus sapien mauris vel neque. Suspendisse ac ullamcorper leo, ut hendrerit quam. Etiam sit amet purus purus. Proin euismod luctus sapien. Vivamus egestas faucibus ornare. Ut eget odio metus. Quisque sed blandit diam, quis condimentum eros."
+        },
+        {
+            "url": "happens",
+            "title": "Happens",
+            "description": "Nam lobortis finibus nulla, non suscipit sem lobortis id. Mauris dapibus semper ipsum in consectetur. Sed tristique arcu sed dignissim pretium. Sed enim mauris, accumsan eu tempus vitae, fermentum et lectus. Pellentesque venenatis dui vitae quam porta, et molestie turpis tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras luctus tempor odio in pretium. Mauris eu urna gravida, convallis ligula a, efficitur ante. Mauris malesuada sodales sapien. Vivamus semper lectus ac arcu accumsan accumsan. Curabitur vitae mollis ante. Etiam nec consequat nisi. Quisque fringilla lobortis velit dignissim auctor. Morbi elementum ac risus a congue. Maecenas interdum ex nunc, at iaculis augue venenatis consequat."
+        },
+        {
+            "url": "here",
+            "title": "Here",
+            "description": "Mauris a pharetra elit, sit amet ornare libero. Fusce nec justo ut dolor sagittis convallis. Praesent leo libero, gravida in euismod non, pretium quis ante. Cras mollis pulvinar velit, sit amet volutpat nulla fermentum nec. Donec tincidunt libero eget nulla rhoncus hendrerit. Donec id condimentum sem. Sed sodales dignissim lorem vel consectetur. Donec eget bibendum enim. Duis interdum fermentum mi ut sodales. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam eget magna et ex varius rhoncus. Morbi quis malesuada mauris."
+        }
+    ]
+}

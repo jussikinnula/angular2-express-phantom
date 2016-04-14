@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="#page of pages">
+        <a [routerLink]="['./PageComponent', { url: page.url }]">{{page.title}}</a>
+    </li>
+</ul>

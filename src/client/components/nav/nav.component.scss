@@ -1,0 +1,31 @@
+:host {
+    display: block;
+    background-color: #336666;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    li {
+        display: inline;
+        color: white;
+        &:after {
+            content: ' | ';
+        }
+        &:last-child {
+            &:after {
+                content: '' !important;
+            }
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                color: yellow;
+            }
+        }
+    }
+}

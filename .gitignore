@@ -1,0 +1,8 @@
+**/node_modules/
+/typings
+/target
+tmp/
+__MACOSX/
+.DS_Store
+Thumbs.db
+.env
