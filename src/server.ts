@@ -3,10 +3,10 @@ import http = require("http");
 import express = require("express");
 import serveStatic = require("serve-static");
 
-// The port should be always defined in env, by default we can use 5000
+// The port should be always defined in env
 const port: number = process.env.PORT || 5000;
 
-// Root directory will be on the ../target (instead of being in src)
+// Root directory will be on the ../target (instead of src)
 const root = path.join(path.resolve(__dirname, "../target"));
 
 // Get ExpressJS instance
@@ -17,40 +17,15 @@ app.use("/assets", serveStatic(path.resolve(root, "assets")));
 
 // Set router to serve index.html (e.g. single page app)
 let router: express.Router = express.Router();
-router.get("/", (request: express.Request, result: express.Response) => {
+router.get("/", (req: express.Request, res: express.Response) => {
     // In case that the request query contains _escaped_fragment_,
     // use PhantomJS to prerender the page
-    if (typeof request.query['_escaped_fragment_'] === 'string') {
-        // We need to remove the query parameters to avoid infinite loop
-        let pagePath = request.originalUrl.split("?").shift();
-        // Otherwise the page URL is just contructed from protocol, host and path
-        let pageUrl = request.protocol + '://' + request.get('host') + pagePath;
-        let phantom = require('phantom');
-        var _ph, _page, _outObj;
-
-        phantom.create().then(ph => {
-            _ph = ph;
-            return _ph.createPage();
-        }).then(page => {
-            _page = page;
-            return _page.open(pageUrl);
-        }).then(status => {
-            return _page.property('content')
-        }).then(content => {
-            // Check if title contains "- Not Found", and change HTTP status
-            let title = content.match(/<title[^>]*>([^<]+)<\/title>/)[1];
-            if (title.indexOf("- Not Found") != -1) {
-                result.status(404);
-            }
-
-            // Send the resulting page
-            result.send(content);
-            _page.close();
-            _ph.exit();
-        });
+    if (typeof req.query['_escaped_fragment_'] === 'string') {
+        let prerender = require("./server/prerender");
+        prerender(req, res);
     } else {
         // Regularly just deliver the single-page-app index.html
-        result.sendFile(path.join(root, "/index.html"));
+        res.sendFile(path.join(root, "/index.html"));
     }
 });
 
