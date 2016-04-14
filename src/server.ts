@@ -37,6 +37,13 @@ router.get("/", (request: express.Request, result: express.Response) => {
         }).then(status => {
             return _page.property('content')
         }).then(content => {
+            // Check if title contains "- Not Found", and change HTTP status
+            let title = content.match(/<title[^>]*>([^<]+)<\/title>/)[1];
+            if (title.indexOf("- Not Found") != -1) {
+                result.status(404);
+            }
+
+            // Send the resulting page
             result.send(content);
             _page.close();
             _ph.exit();
