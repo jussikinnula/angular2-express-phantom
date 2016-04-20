@@ -13,7 +13,6 @@ export class DataService {
         let data = require('./data.json');
         this.siteTitle = data['siteTitle'];
         this.siteDescription = data['siteDescription'];
-        this.defaultRoute = data['defaultRoute'];
         this.pages = data['pages'];
     }
 
