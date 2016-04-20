@@ -26,6 +26,9 @@ ul {
             &:hover {
                 color: yellow;
             }
+            &.active {
+                color: red;
+            }
         }
     }
 }
