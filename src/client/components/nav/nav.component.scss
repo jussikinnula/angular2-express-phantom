@@ -26,8 +26,8 @@ ul {
             &:hover {
                 color: yellow;
             }
-            &.active {
-                color: red;
+            &.router-link-active {
+                text-decoration: underline;
             }
         }
     }
