@@ -1,6 +1,6 @@
 import { enableProdMode, provide } from "angular2/core";
 import { bootstrap } from "angular2/platform/browser";
-import { APP_BASE_HREF, ROUTER_PROVIDERS } from "angular2/router";
+import { ROUTER_PROVIDERS } from "angular2/router";
 
 // App component
 import { AppComponent } from "./client/components/app/app.component";
@@ -19,6 +19,5 @@ if (process.env.NODE_ENV === "production") {
 
 bootstrap(AppComponent, [
     ROUTER_PROVIDERS,
-    SERVICE_PROVIDERS,
-    provide(APP_BASE_HREF, {useValue: "/"})
+    SERVICE_PROVIDERS
 ]).catch((error: Error) => console.error(error));
