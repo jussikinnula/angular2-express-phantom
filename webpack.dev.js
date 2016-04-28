@@ -22,11 +22,11 @@ module.exports = {
     sassLoader: config.sassLoader,
 
     entry: {
-        client: [
+        'assets/js/client': [
             'webpack-dev-server/client?http://localhost:5000',
             config.entry['assets/js/client']
         ],
-        vendor: config.entry['assets/js/vendor']
+        'assets/js/vendor': config.entry['assets/js/vendor']
     },
 
     plugins: [
@@ -35,7 +35,7 @@ module.exports = {
         }),
         new ExtractTextPlugin('assets/css/styles.css'),
         new OccurenceOrderPlugin(),
-        new CommonsChunkPlugin({name: 'vendor', filename: 'vendor.js', minChunks: Infinity}),
+        new CommonsChunkPlugin({name: 'assets/js/vendor', filename: 'assets/js/vendor.js', minChunks: Infinity}),
         new HtmlWebpackPlugin({
             chunksSortMode: 'none',
             filename: 'index.html',
