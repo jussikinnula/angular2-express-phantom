@@ -81,7 +81,7 @@ module.exports = {
         new ExtractTextPlugin('assets/css/styles.css'),
         new DedupePlugin(),
         new OccurenceOrderPlugin(),
-        new CommonsChunkPlugin({name: 'common', filename: 'assets/js/common.js', minChunks: Infinity}),
+        new CommonsChunkPlugin({name: 'assets/js/vendor', filename: 'assets/js/vendor.js', minChunks: Infinity}),
         new HtmlWebpackPlugin({
             chunksSortMode: 'none',
             filename: 'index.html',

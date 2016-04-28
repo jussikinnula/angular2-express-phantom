@@ -36,7 +36,6 @@ module.exports = {
         new ExtractTextPlugin('assets/css/styles.css'),
         new OccurenceOrderPlugin(),
         new CommonsChunkPlugin({name: 'vendor', filename: 'vendor.js', minChunks: Infinity}),
-        new CommonsChunkPlugin({name: 'common', filename: 'common.js'}),
         new HtmlWebpackPlugin({
             chunksSortMode: 'none',
             filename: 'index.html',
