@@ -3,10 +3,10 @@ import { bootstrap } from "@angular/platform-browser-dynamic";
 import { ROUTER_PROVIDERS } from "@angular/router-deprecated";
 
 // App component
-import { AppComponent } from "./client/components/app/app.component";
+import { AppComponent } from "./client/components/app/index";
 
 // Service providers
-import { SERVICE_PROVIDERS } from "./client/services/providers";
+import { SERVICE_PROVIDERS } from "./client/services/index";
 
 // global styles
 import "./styles/styles.scss";
