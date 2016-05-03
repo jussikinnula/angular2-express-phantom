@@ -2,6 +2,36 @@
 
 Example boilerplate to build SEO-friendly Angular 2 application on top of ExpressJS, and using PhantomJS to prerender pages for search engines.
 
+Note! The exact reason of this boilerplate, is to experiment with server-side rendering by using existing software
+
+## What's in the boilerplate?
+
+### General parts
+
+* Angular 2 components structure (based on the *best practices* by John Papa & community)
+* Webpack configuration to build client app, client vendor and server bundles (which builds also on Heroku)
+* Everything under `src` is written in TypeScript, also the typings are included
+* Basic content by using json-loader (Webpack) and a content service
+
+### Server-side rendering
+
+* Proof-of-concept implementation of server-side rendering, using PhantomJS (when GET parameter `_escaped_fragment_` is set)
+* Server-side rendered pages nicely do handover to the JavaScript world
+
+## TODO
+
+### Content improvements
+
+* Add MongoDB for the content (basically making this boilerplate a *MEAN* stack alike starting point)
+* Add support for external CMS'es (Contently, Contentful, etc)
+* Add static assets (fonts, images, etc)
+
+### Server-side rendering
+* Add Redis/Memcached based caching for the server-side rendered pages
+* Add user-agent white/blacklist for enabling server-side rendering for browsers
+* Change to using Angular 2 new router (instead of Angular 2 RC0's `@angular/router-deprecated`)
+* Make `PageComponent` to nest (allowing multi-level pages, e.g. http://myhost.local/first/second/third)
+
 ## Installation
 
 ### Install node modules
