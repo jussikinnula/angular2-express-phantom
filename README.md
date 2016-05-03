@@ -25,12 +25,12 @@ Note! The exact reason of this boilerplate, is to experiment with server-side re
 * Add MongoDB for the content (basically making this boilerplate a *MEAN* stack alike starting point)
 * Add support for external CMS'es (Contently, Contentful, etc)
 * Add static assets (fonts, images, etc)
+* Change to using Angular 2 new router (instead of Angular 2 RC0's `@angular/router-deprecated`)
+* Make `PageComponent` to nest (allowing multi-level pages, e.g. http://myhost.local/first/second/third)
 
 ### Server-side rendering
 * Add Redis/Memcached based caching for the server-side rendered pages
 * Add user-agent white/blacklist for enabling server-side rendering for browsers
-* Change to using Angular 2 new router (instead of Angular 2 RC0's `@angular/router-deprecated`)
-* Make `PageComponent` to nest (allowing multi-level pages, e.g. http://myhost.local/first/second/third)
 
 ## Installation
 
