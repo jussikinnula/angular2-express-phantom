@@ -1,6 +1,6 @@
 {
   "name": "angular2-express-phantom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Example boilerplate to build SEO-friendly Angular 2 application on top of ExpressJS, and using PhantomJS to prerender pages for search engines.",
   "homepage": "https://github.com/jussikinnula/",
   "repository": "https://github.com/jussikinnula/angular2-express-phantom",
