@@ -1,6 +1,6 @@
-import { Component } from "angular2/core";
-import { RouteParams } from "angular2/router";
-import { DOCUMENT } from "angular2/platform/browser";
+import { Component } from "@angular/core";
+import { RouteParams } from "@angular/router-deprecated";
+import { DOCUMENT } from "@angular/platform-browser";
 
 import { IPage } from "../../interfaces/page.interface";
 

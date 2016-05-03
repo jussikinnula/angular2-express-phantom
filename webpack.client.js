@@ -55,12 +55,14 @@ module.exports = {
         'assets/js/vendor': [
             'babel-polyfill',
             'es6-shim',
-            'angular2/bundles/angular2-polyfills',
-            'angular2/common',
-            'angular2/core',
-            'angular2/platform/browser',
-            'angular2/router',
-            'rxjs'
+            'reflect-metadata',
+            '@angular/common',
+            '@angular/core',
+            '@angular/platform-browser',
+            '@angular/platform-browser-dynamic',
+            '@angular/router-deprecated',
+            'rxjs',
+            'zone.js'
         ]
     },
 

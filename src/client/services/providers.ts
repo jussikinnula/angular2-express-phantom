@@ -1,4 +1,4 @@
-import { provide } from "angular2/core";
+import { provide } from "@angular/core";
 
 import { DataService } from "./data/data.service";
 import { UserService } from "./user/user.service";

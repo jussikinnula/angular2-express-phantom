@@ -1,6 +1,6 @@
-import { Component } from "angular2/core";
-import { RouteConfig, RouterOutlet } from "angular2/router";
-import { DOCUMENT } from "angular2/platform/browser";
+import { Component } from "@angular/core";
+import { RouteConfig, RouterOutlet } from "@angular/router-deprecated";
+import { DOCUMENT } from "@angular/platform-browser";
 
 import { NavComponent } from "../nav/nav.component";
 import { PageComponent } from "../page/page.component";
